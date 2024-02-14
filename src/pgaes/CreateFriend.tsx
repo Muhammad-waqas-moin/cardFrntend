@@ -38,7 +38,7 @@ const CreateFriend = () => {
 
   const handleSend = () => {
     axios
-      .post("http://localhost:5000/api/v1/CreateFriendCard", {
+      .post("https://card-backend-phi.vercel.app/api/v1/CreateFriendCard", {
         friendName: `${inputValue}`,
         friendOf: `${selectedMember}`,
         isCarddeliverd: false,

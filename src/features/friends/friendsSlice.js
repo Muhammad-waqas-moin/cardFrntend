@@ -5,7 +5,7 @@ export const fetchfriends = createAsyncThunk(
   "friend/fetchfriends",
   async () => {
     const response = await axios.get(
-      "http://localhost:5000/api/v1/getFriendsCards"
+      "https://card-backend-phi.vercel.app/api/v1/getFriendsCards"
     );
     // console.log("data receive succssfully :", response.data);
     return response.data;

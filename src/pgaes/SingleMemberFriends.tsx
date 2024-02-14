@@ -87,7 +87,7 @@ const SingleMemberFriends = () => {
     console.log("item id:", id);
 
     await axios
-      .put(`http://localhost:5000/api/v1/updateCard/${id}`, {
+      .put(`https://card-backend-phi.vercel.app/api/v1/updateCard/${id}`, {
         isCarddeliverd: true,
       })
       .then((response) => {

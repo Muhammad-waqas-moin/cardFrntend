@@ -4,7 +4,7 @@ import axios from "axios";
 export const fetchmembers = createAsyncThunk(
   "member/fetchmembers",
   async () => {
-    const response = await axios.get("http://localhost:5000/api/v1/getMember");
+    const response = await axios.get("https://card-backend-phi.vercel.app/api/v1/getMember");
     // console.log("data receive succssfully :", response.data);
     return response.data;
   }
